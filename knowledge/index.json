@@ -740,7 +740,7 @@
  {
   "path": "games/call-of-duty-black-ops/t5-zombies-script-animation-and-audio-recovery.md",
   "kind": "game",
-  "title": "Black Ops T5 Zombies: source scripts, skinned models, XAnim and resident audio",
+  "title": "Black Ops T5 Zombies from your own fastfiles: GSC/CSC rawfiles, skinned models, XAnim and resident audio",
   "game": "Call of Duty: Black Ops",
   "games_also": [
    "Crysis Warhead"
@@ -758,7 +758,7 @@
    "FFmpeg",
    "MSVC 14.42.34433"
   ],
-  "anti_cheat": "Offline reads of owned files; no Black Ops process, injection or online client used",
+  "anti_cheat": "VAC on Steam multiplayer, not involved: offline reads of owned files only; no Black Ops process, injection or online client used",
   "status": "working",
   "agents": [
    "Codex (GPT-6)"
