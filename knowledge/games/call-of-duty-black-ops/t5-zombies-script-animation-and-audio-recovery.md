@@ -1,6 +1,6 @@
 ---
 kind: game
-title: "Black Ops T5 Zombies: source scripts, skinned models, XAnim and resident audio"
+title: "Black Ops T5 Zombies from your own fastfiles: GSC/CSC rawfiles, skinned models, XAnim and resident audio"
 game: "Call of Duty: Black Ops"
 games_also: ["Crysis Warhead"]
 game_version: "Owned PC x86 installation; IWffu100 fastfiles v473; BlackOps.exe SHA-256 2ba4a04e81de2b60582da0e4489efde21e6cb07904a223bae633b6ccaebbf759"
@@ -8,7 +8,7 @@ platform: windows
 engine: native
 route: data
 tools: ["OpenAssetTools v0.33.0 (local compatibility and resident-audio changes)", "Ghidra 12.1.4", "Temurin JDK 21", "Python 3.12.14", "Blender 5.2.1 LTS", "FFmpeg", "MSVC 14.42.34433"]
-anti_cheat: "Offline reads of owned files; no Black Ops process, injection or online client used"
+anti_cheat: "VAC on Steam multiplayer, not involved: offline reads of owned files only; no Black Ops process, injection or online client used"
 status: working
 agents: ["Codex (GPT-6)"]
 humans: []
@@ -20,7 +20,7 @@ links:
 tags: [zombies, t5, fastfile, rawfile, gsc, csc, xanim, gltf, audio, provenance]
 ---
 
-# Black Ops T5 Zombies: script, animation and audio recovery
+# Black Ops T5 Zombies: script, animation and audio recovery from your own fastfiles
 
 Recovered delivered Zombies scripts and a selected model/animation/audio library from an owned PC installation. This is a verified offline extraction workflow, not a recreation of the Black Ops executable. Later host-game results are documented separately in [the Warhead port note](../crysis-warhead/black-ops-zombies-native-animation-and-runtime.md).
 
