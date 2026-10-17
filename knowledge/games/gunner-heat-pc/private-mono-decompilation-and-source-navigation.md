@@ -116,7 +116,11 @@ None extracted or generated. No game files, code dumps, or private analysis repo
 Future mod work must separately establish loader compatibility and verify the relevant behavior in
 the actual game, with save/config backups before a modded launch.
 
-
 ## Related integration findings
 
-The later [Nuclear Option integration note](../nuclear-option/ghpc-coop-survival-runtime-source-derived-integration-and-pe.md) records source-layer camera exclusions, source gunner/FCS bindings, projectile retirement, collider identity and FMOD lifecycle findings. Those findings came from a separate private host-adapter effort; the static export counts and verification scope above are unchanged. Current bundle loading and independent-peer acceptance remain unresolved there.
+The later [Nuclear Option integration
+note](../nuclear-option/ghpc-coop-survival-runtime-source-derived-integration-and-pe.md) records source-layer
+camera exclusions, source gunner/FCS bindings, projectile retirement, collider identity and FMOD lifecycle
+findings. Those findings came from a separate private host-adapter effort; the static export counts and
+verification scope above are unchanged. Current bundle loading and independent-peer acceptance remain unresolved
+there.

@@ -41,8 +41,8 @@ not establish runtime loading, and the autoloader teardown method is OnDestroy, 
 | Networking | Shipped Mirage 158.3.5.0 |
 | Guest audio ABI | FMOD 2.1.11 |
 
-Compile against the installed host assemblies. GHPC's managed files are under
-`Bin/GHPC_Data/Managed`; see the [private decompilation workflow](../gunner-heat-pc/private-mono-decompilation-and-source-navigation.md).
+Compile against the installed host assemblies. GHPC's managed files are under `Bin/GHPC_Data/Managed`; see the
+[private decompilation workflow](../gunner-heat-pc/private-mono-decompilation-and-source-navigation.md).
 Keep source exports, original dependencies and converted content in a private lab outside Git.
 Back up profiles/configuration before modded launches and retain original-file hashes.
 
@@ -59,6 +59,10 @@ self-contained downloadable mod. Game assemblies, assets and reconstructed sourc
 Control intents go to the authoritative host. The playable-vehicles reference in the metadata was
 useful for native API patterns; its client-authored pose approach does not establish server authority.
 
+Nuclear Option has public servers and online PvP. Use the plugin only in private sessions where every player
+owns both games and runs the same plugin; this work used a private host. Don't load it when joining public
+servers or any session whose players don't run it. No anti-cheat was found in the install.
+
 ## How the game works
 
 ### Host lifecycle, cameras and networking
@@ -66,7 +70,9 @@ useful for native API patterns; its client-authored pose approach does not estab
 The default early Application static-constructor loader entry caused a native Mono/Harmony crash
 in this installation. The tested entry was `Assembly-CSharp.dll / GameManager / PreSetupGame`, with
 patch installation deferred until the host's menu/resource initialization boundary. This is a
-build-specific observation, not a general Unity prescription.
+build-specific observation, not a general Unity prescription. BepInEx 5 takes its entry from the `Assembly`,
+`Type` and `Method` keys of `[Preloader.Entrypoint]` in `BepInEx/config/BepInEx.cfg` (default
+`UnityEngine.CoreModule.dll`, `Application`, `.cctor`).
 
 Disabling native GroundVehicle control also skips inherited Unit.OnEnable bookkeeping and can leave
 Unit.rb null. Preserve the required inherited initialization while excluding native driving. Remove
