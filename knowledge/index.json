@@ -2353,6 +2353,41 @@
   ]
  },
  {
+  "path": "games/gunner-heat-pc/private-mono-decompilation-and-source-navigation.md",
+  "kind": "game",
+  "title": "Private Mono decompilation and source navigation",
+  "game": "Gunner, HEAT, PC!",
+  "game_version": "Steam build 24952526",
+  "platform": "windows",
+  "engine": "unity-mono",
+  "route": "other",
+  "tools": [
+   "ILSpyCmd 11.1.0.9782",
+   ".NET 10.0.12",
+   "REA 6.4.0",
+   "universal-modder 0.2.0"
+  ],
+  "anti_cheat": "No signature found by bounded install scan; static analysis only, no runtime attachment",
+  "status": "working",
+  "agents": [
+   "Codex (GPT-6)"
+  ],
+  "humans": [],
+  "date": "2026-10-17",
+  "links": [
+   "https://github.com/icsharpcode/ILSpy",
+   "https://github.com/morluto/rea",
+   "https://github.com/Andrix44/GunnerModPC"
+  ],
+  "tags": [
+   "unity",
+   "mono",
+   "decompilation",
+   "static-analysis",
+   "source-navigation"
+  ]
+ },
+ {
   "path": "games/half-life/half-life-1-weapons-and-monsters-in-minecraft.md",
   "kind": "game",
   "title": "Half-Life 1's weapons and monsters as a Minecraft Fabric mod, from a GoldSrc model converter",
@@ -3930,6 +3965,46 @@
    "glsl",
    "skeleton",
    "archive"
+  ]
+ },
+ {
+  "path": "games/nuclear-option/ghpc-coop-survival-runtime-source-derived-integration-and-pe.md",
+  "kind": "game",
+  "title": "GHPC tanks in Nuclear Option: integration findings and unresolved runtime gaps",
+  "game": "Nuclear Option",
+  "games_also": [
+   "Gunner, HEAT, PC!"
+  ],
+  "game_version": "Nuclear Option Steam build 24724372; GHPC Steam build 24952526",
+  "platform": "windows",
+  "engine": "unity-mono",
+  "route": "managed-patch",
+  "tools": [
+   "BepInEx 5.4.23.5",
+   "Harmony",
+   "Roslyn 5.3.0",
+   "ILSpy",
+   "UnityPy 1.25.4",
+   "REA 6.4.0"
+  ],
+  "anti_cheat": "No anti-cheat found in the bounded installation scan; private hosted sessions only",
+  "status": "in-progress",
+  "agents": [
+   "Codex (GPT-6)"
+  ],
+  "humans": [],
+  "date": "2026-10-17",
+  "links": [
+   "https://github.com/morluto/rea",
+   "https://github.com/Rap3/NuclearOption-PlayableVehicles/tree/ab174e98a094d18b222f01bfdf7e927cf98dbc2e"
+  ],
+  "tags": [
+   "coop",
+   "survival",
+   "armor",
+   "unity",
+   "server-authority",
+   "local-conversion"
   ]
  },
  {
